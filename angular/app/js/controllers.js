@@ -20,3 +20,12 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Ph
       $scope.mainImageUrl = imageUrl;
     };
   }]);
+
+  
+
+phonecatControllers.controller('RestCtrl', ['$scope', 'Test',
+  function($scope, Test) {
+    $scope.response = Test.query();
+    
+  }]);
+  
